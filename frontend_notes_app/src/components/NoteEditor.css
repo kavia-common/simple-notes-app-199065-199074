@@ -1,0 +1,77 @@
+.NoteEditor {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.NoteEditor__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  gap: 12px;
+}
+
+.NoteEditor__meta {
+  display: inline-flex;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.NoteEditor__form {
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+  min-height: 0;
+}
+
+.NoteEditor__label {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.NoteEditor__title {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: var(--shadow-sm);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.NoteEditor__body {
+  width: 100%;
+  resize: none;
+  min-height: 280px;
+  flex: 1;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--shadow-sm);
+  line-height: 1.5;
+}
+
+.ButtonDanger {
+  border: 1px solid rgba(239, 68, 68, 0.38);
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: transform 0.08s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.ButtonDanger:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  background: rgba(239, 68, 68, 0.13);
+}
